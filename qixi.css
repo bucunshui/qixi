@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a{text-decoration: none;}
+
+li{list-style: none;}
+
+.container{
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+/*导航栏目开始*/
+.container>.header{
+    /* border:1px solid blue; */
+    width: inherit;
+    height:70px;
+    background:#BC8F8F;
+}
+.container>.header a:hover span{
+    color:white;
+}
+.container>.header>.nav{
+    /* border:1px solid green; */
+    width: 100%;
+    height:70px;    
+}
+/*导航栏里的LOGO部分开始*/
+.container>.header>.nav>.logo{
+    /* border:1px solid green; */
+    width:15%;
+    height: inherit;
+    margin:0;
+    float: left;
+}
+.container>.header>.nav>.logo>img{
+    height:50px;
+    padding-top: 10px;
+}
+/*导航栏里的LOGO部分结束*/
+/*导航栏里的导航条部分开始*/
+.container>.header>.nav>.navbar{
+    /* border:1px solid green; */
+    width:65%;
+    height:inherit;
+    float: left;
+}
+.container>.header>.nav>.navbar>ul{
+    width: 100%;
+    padding-top:15px;
+    margin-left: 120px;
+}
+.container>.header>.nav>.navbar>ul>li{
+    float: left;
+    padding:0 15px;
+    /* border:1px solid green; */
+}
+.container>.header>.nav>.navbar>ul>li:active{
+    border-bottom: 3px solid orange;
+}
+.container>.header>.nav>.navbar>ul>li>a{
+    font-size: 35px;
+}
+.container>.header>.nav>.navbar>ul .iconfont{
+    font-size: 35px;
+}
+.container>.header>.nav>.user{
+    height:70px;
+    width:20%;
+    margin-left:80%;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.container>.header>.nav>.user .username{
+    text-align: center;
+}
+.container>.header>.nav>.user .username .myname{
+    color: cornsilk;
+    font-size: 30px;
+}
+.container>.header>.nav>.user>ul>li{
+    float: left;
+    height:70px;
+    width:30%;
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    cursor: pointer;
+}
+.container>.header>.nav>.user .photo{
+    width:68px;
+    height:68px;
+    border:1px solid white;
+}
+.container>.header>.nav>.user .photo img{
+    width: 68px;
+    height:68px;
+}
+.container>.header>.nav>.user .check>a{
+    box-sizing: border-box;
+    display: block;
+    width:100%;
+    height:inherit;
+    text-align: center;
+    padding-top:5px;
+}
+.check>a>span{
+    display: block;
+    font-size: 30px;
+}
+.container>.header>.nav>.user .check .photo-menu{
+    border:1px solid pink;
+    width:100px;
+    display: none;
+    position: absolute;
+    top:70px;
+    
+}
+.container>.header>.nav>.user .check .photo-menu li{
+    border:1px solid pink;
+    width: 100%;
+    height:84px;
+    text-align: center;
+    background-color: rgb(250, 157, 124);
+}
+.container>.header>.nav>.user .check .photo-menu li img{
+    width: 68px;
+    height: 68px;
+}
+.container>.header>.nav>.user .check:hover .photo-menu{
+    display: block;  
+    position: absolute;
+    z-index: 3;
+}
+/*导航栏里的导航条部分结束*/
+/*导语部分开始*/
+.content{
+    width:100%;
+    height:600px;
+    position: absolute;
+}
+.content>div{
+    float: left;
+}
+.content>.left-img,
+.content>.right-img{
+    width:25%;
+    height:600px;
+    position: relative;
+    z-index: 2;
+    /* border: 1px solid black; */
+}
+.content>.left-img img,
+.content>.right-img img{
+    width:100%;
+    height: 600px;
+}
+.content>.foreword{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: inherit;
+    background-color: rgb(208, 252, 252);
+}
+.content>.foreword>.computer,
+.content>.foreword>.my{
+    width:50%;
+    height:600px; 
+    float: left;
+}
+.content>.foreword>.computer>li,
+.content>.foreword>.my>li{
+    height:33%;
+    /* border: 1px solid black; */
+}
+.content>.foreword>.computer>li>img,
+.content>.foreword>.my>li>img{
+    width:70px;
+    height:70px;
+    float: left;
+}
+.content>.foreword span{
+    box-sizing: border-box;
+    padding:5px 5px 0 5px;;
+    display: block;
+    /* border: 1px solid black; */
+    height:50px;
+    width:220px;
+    float: left;
+    margin-top:10px;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+.content>.foreword>.my>li{
+    box-sizing: border-box;
+    padding-top:80px;
+    padding-left:62px;
+}
+/*导语借结束*/
+.main{
+    width:100%;
+    position: absolute;
+    top:680px;
+    background: #BC8F8F;
+}
+.main hr{
+    width:100%;
+    height:10px;
+}
+
+.qixi,.tang,.song,.yuan,.ming,.qing{
+    float: left;
+    width: 48%;
+    height:500px;
+    border: 5px solid plum;
+    margin-bottom:10px;
+    margin-left:20px;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding:60px 40px 40px 40px;
+    font-size: 20px;
+    line-height: 40px;
+    background:rgb(180, 180, 180);
+    position: relative;
+}
+
+
+.qixi>p{
+    text-indent: 40px;
+    text-align: left;
+}
+.main h1{
+    font-size: 40px;
+}
+.main  span{
+    cursor: pointer;
+    font-size: 40px;
+}
+.main  span:hover,{
+    color:red;
+}
+.main div:hover{
+    background-color: antiquewhite;
+}
+.main button{
+    width:150px;
+    height:40px;
+    position: absolute;
+    background-color: goldenrod;
+    bottom:20px;
+    right:20px;
+}
+/*main结束*/
+/*footer开始*/
+.footer{
+    position: absolute;
+    top:2200px;
+    width:100%;
+    height:100px;
+    background: #BC8F8F;
+    margin-bottom:50px;
+    border-top: 10px solid white;
+}
+.footer ul{
+   
+    height: 100px;
+    /* border: 1px solid plum; */
+    margin-left:40%;
+}
+.footer ul li{
+    width: 100px;
+    height:100px;
+    float: left;
+    /* border: 1px solid plum; */
+    text-align: center;  
+}
+.footer img{
+    height:100px;
+    width:100px;
+}
+.footer ul li:first-child{
+    box-sizing: border-box;
+    padding-top:40px;
+}
